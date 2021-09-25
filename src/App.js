@@ -6,7 +6,7 @@ function App() {
   let [country, setCountry] = useState('us');
   useEffect(() => {
     fetch(
-      `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=e32f45482d5041bbba0d456fbef10099`
+      `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=0ca7088c5e35431db7fe39dceb6b8abf`
     )
       .then((newData) => newData.json())
       .then((news) => setarticle(news.articles));
